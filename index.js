@@ -69,7 +69,8 @@ function placeOrder(cardNumber) {
   //var theCart = getCart();
   //for(var i = 0; i < theCart.length; i++) {
   //  removeFromCart(theCart[i]);
-  }
+  //}
+  setCart([])
   
   return output;
 }
