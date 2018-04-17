@@ -66,11 +66,6 @@ function placeOrder(cardNumber) {
   }
   
   var output = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
-  //var theCart = getCart();
-  //for(var i = 0; i < theCart.length; i++) {
-  //  removeFromCart(theCart[i]);
-  //}
   setCart([])
-  
   return output;
 }
