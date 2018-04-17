@@ -21,6 +21,7 @@ function viewCart() {
   if(theCart.length === 0) {
     return "Your shopping cart is empty.";
   }
+  
   var items = ""
   for(var i = 0; i < theCart.length; i++) {
     if(items.length > 0) {
