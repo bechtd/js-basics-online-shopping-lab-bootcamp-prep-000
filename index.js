@@ -24,9 +24,13 @@ function viewCart() {
   var items = ""
   for(var i = 0; i < theCart.length; i++) {
     if(items.length > 0) {
-      items += ",";
-    }
+      items += ", ";
     
+      if(i === items.length - 1) {
+        items += "and ";
+      }
+    }
+
     items += `${theCart[i].itemName} at $${theCart[i].itemPrice}`;
   }
   
