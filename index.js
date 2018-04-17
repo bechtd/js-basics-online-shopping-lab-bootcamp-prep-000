@@ -26,7 +26,7 @@ function viewCart() {
       items += ","
     }
     
-    items += `${theCart[i].itemName} at $${cart[i].itemPrice}`
+    items += `${theCart[i].itemName} at $${theCart[i].itemPrice}`
   }
   
   return `In your cart, you have ${items}.`
