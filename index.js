@@ -50,12 +50,15 @@ function total() {
 
 function removeFromCart(item) {
   var theCart = getCart();
-  var i = 0;
-  for(; i < theCart.length; i++) {
-    
+  for(var i = 0; i < theCart.length; i++) {
+    if(theCart[i].itemName === item) {
+      // remove item
+      theCart = [...theCart.slice(0, i), ...theCart.slice(i, theCart.length - 1)]
+      return theCart;
+    }
   }
   
-  return
+  return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
