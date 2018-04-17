@@ -26,7 +26,7 @@ function viewCart() {
     if(items.length > 0) {
       items += ", ";
     
-      if(i === items.length - 1) {
+      if(i === theCart.length - 1) {
         items += "and ";
       }
     }
