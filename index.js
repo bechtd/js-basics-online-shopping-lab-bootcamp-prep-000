@@ -16,16 +16,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(cart.length === 0) {
+  var theCart = getCart()
+  if(theCart.length === 0) {
     return "Your shopping cart is empty."
   }
   var items = ""
-  for(var i = 0; i < cart.length; i++) {
+  for(var i = 0; i < theCart.length; i++) {
     if(items.length > 0) {
       items += ","
     }
     
-    items += `${cart[i].itemName} at $${cart[i].itemPrice}`
+    items += `${theCart[i].itemName} at $${cart[i].itemPrice}`
   }
   
   return `In your cart, you have ${items}.`
